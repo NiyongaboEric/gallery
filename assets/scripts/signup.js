@@ -23,16 +23,18 @@ function validate(){
 	let confirm_password = document.querySelector(".confirm_password").value;
 	let checkbox = document.querySelector(".checkbox").value;
 
+	error = (err) => {
+		document.querySelector(".input_errors").innerHTML = `${err}`;
+		document.querySelector(".input_errors").style.color = "red";
+	}
 
 	if (first_name === "") {
-		document.querySelector(".input_errors").innerHTML = " first name is required *";
-		document.querySelector(".input_errors").style.color = "red";
+		error("first name is required *");
 		return false;
 	}
 
 	if (last_name === "") {
-		document.querySelector(".input_errors").innerHTML = " last name is required *";
-		document.querySelector(".input_errors").style.color = "red";
+		error("last name is required *");
 		return false;
 	}
 
@@ -41,39 +43,30 @@ function validate(){
 	} 
 
 	if (address === "") {
-		document.querySelector(".input_errors").innerHTML = " address is required *";
-		document.querySelector(".input_errors").style.color = "red";
+		error("address is required *");
 		return false;
 	}
 
 	if (email === "" || isEmailValid(email) === false) {
-		document.querySelector(".input_errors").innerHTML = " a valid email is required *";
-		document.querySelector(".input_errors").style.color = "red";
+		error("a valid email is required *");
 		return false;
 	}
 	
 	isPasswordMatch = true ? password === confirm_password : false;
 	if(!isPasswordMatch){
-		console.log("a");
-		document.querySelector(".input_errors").innerHTML = " a password should match *";
-		document.querySelector(".input_errors").style.color = "red";
+		error("a password should match *");
 		return false;
 	}
 
 	isPwdLengthZero = true ? password.length === 0 || confirm_password.length === 0 : false;
 	if(isPwdLengthZero){
-		console.log("b");
-		document.querySelector(".input_errors").innerHTML = " a password length should be greater than zero *";
-		document.querySelector(".input_errors").style.color = "red";
+		error("a password length should be greater than zero *");
 		return false;
 	}
 
 	if(checkbox !== "true"){
-		document.querySelector(".input_errors").innerHTML = " you must read our privacy *";
-		document.querySelector(".input_errors").style.color = "red";
+		error("you must read our privacy *");
 		return false;	
 	}
-	document.querySelector(".input_errors").innerHTML = "yes ";
-	document.querySelector(".input_errors").style.color = "green";
 	return true;
 }

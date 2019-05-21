@@ -3,10 +3,10 @@
 	display: table;
 	margin-right: auto;
 	margin-left: auto;
-    background-color: #ffffff;
-    width: 37%;
-    padding: 40px;
-    margin-top: 30px;
+	background-color: #ffffff;
+	width: 37%;
+	padding: 40px;
+	margin-top: 30px;
 }
 .signup_title{
 	font-weight: bold;
@@ -18,11 +18,11 @@
 
 input[type="text"], input[type="email"], input[type="password"] {
 	margin-bottom: 20px;
-    height: 35px;
-    border: none;
-    border-bottom: 0.1px solid gray;
-    width: 100%;
-    outline: none;
+	height: 35px;
+	border: none;
+	border-bottom: 0.1px solid gray;
+	width: 100%;
+	outline: none;
 }
 input[type="checkbox"] {
 	padding: 0;
@@ -31,10 +31,10 @@ input[type="checkbox"] {
 input[type="submit"] {
 	float: right;
 	height: 35px;
-    background-color: #4CAF50;
-    width: 25%;
-    border: none;
-    color: white;
+	background-color: #4CAF50;
+	width: 25%;
+	border: none;
+	color: white;
 }
 input[type="submit"]:hover{
 	border: 1px solid green !important;

@@ -15,10 +15,16 @@ body {
 	min-height: 100% !important;
 }
 
+p {
+	padding: 0;
+    margin: 0;
+}
+
 hr {
 	padding: 0;
     margin: 0;
 }
+
 footer{
 	text-align: center;
 }

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 html{
+=======
+html {
+>>>>>>> feature/dashboard
 	height: 100%;
 }
 body {
@@ -12,7 +16,11 @@ body {
 .container{
 	min-height: 100% !important;
 }
+<<<<<<< HEAD
 p{
+=======
+p {
+>>>>>>> feature/dashboard
 	margin: 0;
 	padding: 0;
 }
@@ -20,7 +28,10 @@ hr {
 	padding: 0;
 	margin: 0;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> feature/dashboard
 footer{
 	text-align: center;
 }
@@ -43,7 +54,10 @@ ul {
 	font-family: monospace;
 	padding-left: 1rem;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> feature/dashboard
 .navbar_container li {
 	display: block;
 	float: left;
@@ -136,3 +150,14 @@ textarea{
 	margin: 0;
 	padding: 0;
 }
+
+/* Dashboard */
+h4.dashboard_title{
+	background-color: #0D0D0D;
+	text-align: center;
+	color: #F0F0F2;
+	font-family: inherit;
+	margin: 0;
+	padding: 10px;
+}
+/* end */

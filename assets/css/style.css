@@ -132,3 +132,7 @@ ul {
 	}
 }
 /* end of navbar style*/
+textarea{
+	margin: 0;
+	padding: 0;
+}
